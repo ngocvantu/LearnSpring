@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<%
+		application.setAttribute("chao", "tunguyen");
+	%>
+	<div>
+		<h2>Hello from Git! ${applicationScope["chao"] }</h2>
+	</div>
 </body>
 </html>
