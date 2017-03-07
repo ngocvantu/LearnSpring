@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class IndexServlet
+ * Servlet implementation class Chap6El
  */
-@WebServlet("/index")
-public class IndexServlet extends HttpServlet {
+@WebServlet("/chap6-el")
+public class Chap6El extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public IndexServlet() {
+    public Chap6El() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,7 @@ public class IndexServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("index.jsp").forward(request, response);
+		request.getRequestDispatcher("chap6-el.jsp").forward(request, response);
 	}
 
 	/**

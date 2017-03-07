@@ -8,10 +8,11 @@
 </head>
 <body>
 	<%
-		application.setAttribute("chao", "tunguyen");
+// 		application.setAttribute("chao", "tunguyen");
 	%>
 	<div>
 		<h2>Hello from Git! ${applicationScope["chao"] }</h2>
+		<a href="chap6-el" >Chapter 6: Expression language</a>
 	</div>
 </body>
 </html>
