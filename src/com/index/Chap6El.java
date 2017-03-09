@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Chap6El
  */
-@WebServlet("/chap6-el")
+@WebServlet(urlPatterns = "/chap6-el", loadOnStartup = 1)
 public class Chap6El extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

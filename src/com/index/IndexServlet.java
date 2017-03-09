@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class IndexServlet
  */
-@WebServlet("/index")
+@WebServlet(urlPatterns = "/index", loadOnStartup = 1)
 public class IndexServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -20,6 +20,18 @@ public class IndexServlet extends HttpServlet {
     public IndexServlet() {
         super();
         // TODO Auto-generated constructor stub
+    }
+    
+    @Override
+    public void init() throws ServletException {
+    	System.out.println("/index servlet init");
+    	super.init();
+    }
+    
+    @Override
+    public void destroy() { 
+    	System.out.println("/index servlet destroyed");
+    	super.destroy();
     }
 
 	/**
