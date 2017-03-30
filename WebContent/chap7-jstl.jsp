@@ -12,5 +12,9 @@
 	<a href="<c:url value="https://www.youtube.com/watch?v=iXBg8KiHx8A&t=2555s" >
 		<c:param name="chao" value="tunguyen va ai"></c:param>
 	</c:url>" target="blank_" >khong</a> 
+	
+	<c:set value="tunguyen" var="tunguyen"></c:set>
+	
+	chao ${tunguyen }
 </body>
 </html>
